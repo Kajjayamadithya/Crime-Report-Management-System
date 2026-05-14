@@ -1,9 +1,6 @@
 const mongoose = require('mongoose');
 
-/**
- * connectDB — Establishes connection to MongoDB.
- * The MONGO_URI must be provided by the user via .env — never hardcoded.
- */
+
 const connectDB = async () => {
   if (!process.env.MONGO_URI || process.env.MONGO_URI.trim() === '') {
     console.error('❌ MONGO_URI is not defined in .env file');
