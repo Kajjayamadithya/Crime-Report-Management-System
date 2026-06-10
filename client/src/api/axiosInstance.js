@@ -3,7 +3,7 @@ import axios from 'axios';
 // Create an Axios instance pointing directly to the backend server.
 // Per absolute rules, we DO NOT use a proxy in package.json/vite.config.js.
 const axiosInstance = axios.create({
-  baseURL: 'https://crime-report-management-system-1.onrender.com/api/',
+  baseURL: 'http://localhost:5000/api',
   headers: {
     'Content-Type': 'application/json',
   },
